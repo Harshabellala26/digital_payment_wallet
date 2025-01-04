@@ -47,7 +47,7 @@ const signup = async (req, res) => {
     // Initialize balance and create an Account for the user
     await Account.create({
       userId: user._id,
-      balance: 1 + Math.random() * 10000,
+      balance:10000,
     });
 
     // Optional: generate JWT token here
